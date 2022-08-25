@@ -22,4 +22,10 @@ describe('CardImageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should exists div card-image`, () => {
+    const fixture = TestBed.createComponent(CardImageComponent);
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('.card-image')).not.toBe(null);
+  });
 });

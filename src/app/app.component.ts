@@ -6,18 +6,17 @@ import { CharacterService } from './services/character.service';
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
-export class AppComponent {
-  title = 'angular-test-bank';
+export class AppComponent implements OnInit{
   characterData!: Character[];
 
-  constructor(private service: CharacterService) {
+  constructor(private service: CharacterService) {}
 
-  }
-
+  /**
+   * Metodo del ciclo de vida de Angular, encargado de realizar la suscripción al servicio
+   */
   ngOnInit(): void {
     this.service.getCharacters().subscribe(characters => {
       this.characterData = characters
-      console.log(this.characterData)
     })
   }
 }

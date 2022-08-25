@@ -22,6 +22,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Summary Test
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Inicialmente analicé el desafío punto por punto, luego realicé una prueba al API la cual devuelve la información de los personajes, con el fin de corroborar de que si estuviera retornado la información correspondiente, después plasme en mi cuaderno los posible componentes y encarpetado que debía crear teniendo en cuenta el diseño UI, luego inicié con la creación del proyecto, pero antes de esto instale nvm, para poder cambiar de versión en nodejs ya que la solicitada en el desafío es una versión mas vieja, luego empecé a crear todo el encarpetado y componentes correspondientes como las carpetas de model, components, services y posteriormente con la creación de cada uno de sus respectivos archivos. Al momento de iniciar con el código, primero me centre en cómo iba a obtener la data y probar de que me funcionara correctamente para luego iniciar con la parte del diseño. Mi percepción frente a la prueba, fue bastante buena e interesante, no me pareció muy compleja pero había varias cositas para tener en cuenta, sentí que el tiempo fue un poco corto teniendo en cuenta que fue de un día para otro, pero de resto todo muy bien.

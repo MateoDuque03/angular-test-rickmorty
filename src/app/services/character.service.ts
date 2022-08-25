@@ -13,7 +13,7 @@ export class CharacterService {
   constructor(private http: HttpClient) { }
 
   /**
-   * Función encargada de retornar el listado de personajes de manera Asincronica
+   * Metodo encargado de retornar el listado de personajes de manera Asincronica
    * @returns Retorna lista de personajes
    */
   getCharacters(): Observable<Character[]> {
@@ -23,7 +23,7 @@ export class CharacterService {
   }
 
   /**
-   * Función encargada de transformar el listado de personajes
+   * Metodo encargado de transformar el listado de personajes
    * @param data Lista de personajes
    * @returns Retorna lista de personajes unicamente con las propiedades necesarias
    */

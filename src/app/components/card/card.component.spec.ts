@@ -22,4 +22,17 @@ describe('CardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should exists div container`, () => {
+    const fixture = TestBed.createComponent(CardComponent);
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('.container')).not.toBe(null);
+  });
+
+  it(`should no exists div child-container`, () => {
+    const fixture = TestBed.createComponent(CardComponent);
+    const compiled = fixture.nativeElement as HTMLElement;
+    console.log(compiled.querySelector('.container .child-container'))
+    expect(compiled.querySelector('.container .child-container')).toBe(null);
+  });
 });

@@ -22,4 +22,11 @@ describe('CardBodyComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should exists component mat-card-content`, () => {
+    const fixture = TestBed.createComponent(CardBodyComponent);
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('mat-card-content')).not.toBe(null);
+  });
+
 });

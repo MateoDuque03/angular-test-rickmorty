@@ -22,4 +22,10 @@ describe('CardHeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should exists component mat-card-header`, () => {
+    const fixture = TestBed.createComponent(CardHeaderComponent);
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('mat-card-header')).not.toBe(null);
+  });
 });
