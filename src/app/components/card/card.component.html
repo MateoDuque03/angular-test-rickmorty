@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="child-container" *ngFor="let character of characterList">
+        <mat-card class="example-card" >
+            <app-card-image>
+              <img mat-card-image src='{{character.image}}' alt="">
+            </app-card-image>
+						<app-card-header>
+							<mat-card-title>{{ character.name }}</mat-card-title>
+						</app-card-header>
+						<app-card-body>
+							<mat-card-subtitle>Species: {{ character.species }}</mat-card-subtitle>
+							<mat-card-content>Status: {{ character.status }} </mat-card-content>
+						</app-card-body>
+        </mat-card>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 5% 0 5% 0;
+	width: 100%;
+}
+
+.child-container {
+	border-radius: 0.5rem;
+	color: #17202a;
+	flex: 29.33% 1;
+	margin: 10px;
+	max-width: 300px;
+	min-width: 200px;
+	padding: 0rem;
+	text-align: center;
+	border-style: groove;
+}
